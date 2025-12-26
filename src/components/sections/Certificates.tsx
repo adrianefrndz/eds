@@ -8,7 +8,7 @@ export default function Certificates() {
           Certificates
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 items-stretch">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
           {certificates.map((cert) => (
             <div
               key={cert.title}

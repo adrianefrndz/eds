@@ -1,5 +1,7 @@
-import udemy from "../assets/udemy.jpg";
-import coursera from "../assets/coursera.png";
+import udemy from "../assets/certificates/udemy.jpg";
+import coursera from "../assets/certificates/coursera.png";
+import java from "../assets/certificates/java.png";
+import emp from "../assets/certificates/emp.png";
 export interface Certificate {
   title: string;
   issuer: string;
@@ -23,10 +25,18 @@ export const certificates: Certificate[] = [
     image: coursera,
     link: "https://www.coursera.org/account/accomplishments/specialization/IXJTHI0HG41M?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof",
   },
-  // {
-  //   title: "Java Programming",
-  //   issuer: "TESDA",
-  //   year: "2025",
-  //   link: "",
-  // },
+  {
+    title: "Java Programming",
+    issuer: "TESDA",
+    year: "2025",
+    image: java,
+    link: "",
+  },
+  {
+    title: "Exclusive Mentoring Program",
+    issuer: "Global Sk1lls",
+    year: "2025",
+    image: emp,
+    link: "",
+  },
 ];
