@@ -5,6 +5,7 @@ import Projects from "./components/sections/Projects";
 import Footer from "./components/layout/Footer";
 import Certificates from "./components/sections/Certificates";
 import Contact from "./components/sections/Contact";
+import DataAnalyticsProjects from "./components/sections/DataAnalyticsProjects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Certificates />
       <Skills />
       <Projects />
+      <DataAnalyticsProjects />
       <Contact />
       <Footer />
     </>
