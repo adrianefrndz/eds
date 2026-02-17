@@ -9,7 +9,7 @@ const skillGroups = [
   },
   {
     title: "Data Analytics",
-    skills: ["SQL", "Python", "Data Visualization"],
+    skills: ["SQL", "Python", "Data Visualization", "Data Cleaning"],
   },
   {
     title: "Tools",
@@ -19,6 +19,7 @@ const skillGroups = [
       "Cursor",
       "Eclipse",
       "IntelliJ",
+      "Power BI",
       "BigQuery",
       "GitHub",
     ],
