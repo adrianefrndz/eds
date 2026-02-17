@@ -19,15 +19,15 @@ const DataAnalyticsProjects = () => {
 
             {/* Content */}
             <div className={`${index % 2 !== 0 ? "md:order-1" : ""}`}>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+              <h2 className="text-3xl md:text-3xl font-bold text-blue-700 mb-6">
                 {project.title}
               </h2>
 
-              <p className="text-lg text-slate-600 leading-relaxed">
+              <p className="text-md text-slate-600 leading-relaxed text-justify">
                 {project.description}
               </p>
 
-              <p className="text-lg text-slate-600 mt-4 leading-relaxed">
+              <p className="text-md text-slate-600 mt-4 leading-relaxed text-justify">
                 {project.description2}
               </p>
             </div>
