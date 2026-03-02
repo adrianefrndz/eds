@@ -6,22 +6,22 @@ export default function Hero() {
         {/* Left: Text Content */}
         <div className="flex-1 text-center md:text-left">
           {/* Name */}
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-slate-900">
+          <h1 className="text-xl md:text-5xl font-bold leading-tight text-slate-900">
             Adriane Fernandez
           </h1>
 
           {/* Job Title */}
-          <h2 className="text-2xl md:text-2xl font-semibold text-slate-600 mt-2">
+          <h2 className="text-lg md:text-2xl font-semibold text-slate-600 mt-2">
             Software Developer | Data Analyst
           </h2>
 
           {/* Education */}
-          <div className="mt-6 text-sm text-slate-500">
+          <div className="mt-2 md:mt-6 text-sm text-slate-500">
             <p>Bachelor of Secondary Education major in Mathematics</p>
           </div>
 
           {/* Buttons */}
-          <div className="mt-8 flex justify-center md:justify-start gap-4">
+          <div className="mt-8 text-sm md:text-base flex justify-center md:justify-start gap-4">
             <a
               href="#projects"
               className="bg-sky-400 text-slate-900 px-6 py-3 rounded-lg font-medium hover:bg-sky-300">

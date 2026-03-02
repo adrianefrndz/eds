@@ -6,7 +6,7 @@ export default function Portfolio() {
   const [activeImages, setActiveImages] = useState<string[] | null>(null);
 
   return (
-    <section id="projects" className="py-24 bg-slate-900">
+    <section id="projects" className="py-10 md:py-24 bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-2xl font-semibold mb-12 text-slate-200">
           Projects
@@ -20,17 +20,17 @@ export default function Portfolio() {
                          hover:border-sky-400 transition rounded-lg overflow-hidden">
               {/* Preview Image */}
               <div className="h-44 flex items-center justify-center bg-slate-900">
-                {Array.isArray(project.images) &&
-                project.images.length > 0 &&
-                project.images[0] ? (
+                {(
+                  Array.isArray(project.images) &&
+                  project.images.length > 0 &&
+                  project.images[0]
+                ) ?
                   <img
                     src={project.images[0]}
                     alt={project.title}
                     className="max-h-44 max-w-full object-contain"
                   />
-                ) : (
-                  <div className="text-slate-500 text-sm">No image</div>
-                )}
+                : <div className="text-slate-500 text-sm">No image</div>}
               </div>
 
               {/* Content */}
@@ -56,8 +56,8 @@ export default function Portfolio() {
 
                 {/* Actions */}
                 <div className="mt-auto pt-6 flex items-center gap-4 text-sm">
-                  {project.repo ? (
-                    project.repo.startsWith("http") ? (
+                  {project.repo ?
+                    project.repo.startsWith("http") ?
                       <a
                         href={project.repo}
                         target="_blank"
@@ -65,12 +65,11 @@ export default function Portfolio() {
                         className="text-sky-400 hover:underline">
                         Source
                       </a>
-                    ) : (
-                      <span className="text-slate-400 italic">
+                    : <span className="text-slate-400 italic">
                         {project.repo}
                       </span>
-                    )
-                  ) : null}
+
+                  : null}
 
                   {Array.isArray(project.images) &&
                     project.images.length > 1 && (

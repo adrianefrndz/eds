@@ -9,7 +9,7 @@ const skillGroups = [
   },
   {
     title: "Data Analytics",
-    skills: ["SQL", "Python", "Data Visualization", "Data Cleaning"],
+    skills: ["SQL", "Python", "Power BI", "Tableau", "Jupyter"],
   },
   {
     title: "Tools",
@@ -19,8 +19,6 @@ const skillGroups = [
       "Cursor",
       "Eclipse",
       "IntelliJ",
-      "Power BI",
-      "BigQuery",
       "GitHub",
     ],
   },
@@ -28,7 +26,7 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <section className="py-24 bg-slate-900">
+    <section className="py-10 md:py-24 bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-2xl font-semibold mb-12 text-slate-200">
           Tech Stack

@@ -2,7 +2,7 @@ import { certificates } from "../../data/certificates";
 
 export default function Certificates() {
   return (
-    <section id="certificates" className="py-24 bg-slate-900">
+    <section id="certificates" className="py-10 md:py-24 bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-2xl font-semibold mb-12 text-slate-200">
           Certificates
@@ -15,12 +15,12 @@ export default function Certificates() {
               className="bg-slate-800 border border-white/10 rounded-xl overflow-hidden
                  hover:border-sky-400 transition flex flex-col h-full">
               {/* Image container ALWAYS rendered */}
-              <div className="h-40 bg-slate-900 flex items-center justify-center">
+              <div className="h-32 md:h-40 bg-slate-900 flex items-center justify-center">
                 {cert.image && (
                   <img
                     src={cert.image}
                     alt={cert.title}
-                    className="max-h-40 max-w-full object-contain
+                    className="md:max-h-40 max-h-32 max-w-full object-contain
                        hover:scale-105 transition-transform duration-300"
                   />
                 )}
@@ -29,12 +29,16 @@ export default function Certificates() {
               {/* Content pushed to bottom */}
               <div className="p-6 flex flex-col flex-1">
                 <div className="mt-auto">
-                  <h3 className="text-lg font-medium text-slate-100">
+                  <h3 className="text-base md:text-lg font-medium text-slate-100">
                     {cert.title}
                   </h3>
 
-                  <p className="mt-2 text-sm text-slate-400">{cert.issuer}</p>
-                  <p className="mt-1 text-sm text-slate-500">{cert.year}</p>
+                  <p className="mt-2 text-xs md:text-sm text-slate-400">
+                    {cert.issuer}
+                  </p>
+                  <p className="mt-1 text-xs md:text-sm text-slate-500">
+                    {cert.year}
+                  </p>
 
                   {cert.link && (
                     <a
